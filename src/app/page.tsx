@@ -26,7 +26,7 @@ const Page = () => {
       type: 'toggleDone',
       payload: { id }
     });
-    alert('checkbox não funciona :(  ( ainda )')
+    alert('este botão possui alguns erros, pode ser que não funcione corretamente :(')
   }
 
   const handleEdit = (id: number) => {
