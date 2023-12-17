@@ -49,7 +49,7 @@ const Page = () => {
   }
 
   return (
-    <div className="container mx-auto">
+    <div className=" container mx-auto">
       <h1 className="text-center text-4xl my-4">Lista de Tarefas</h1>
       <div className="max-w-2xl mx-auto flex rounded-md bg-gray-900 border border-gray-400 p-4 my-4">
         <input
@@ -64,21 +64,27 @@ const Page = () => {
           onClick={handleAddButton}
         >ADICIONAR</button>
       </div>
-      <ul className="max-w-2xl mx-auto">
+      <ul className="mx-auto">
         {list.map(item => (
           <li
             key={item.id}
-            className="flex items-center p-3 my-3 border-b border-gray-700"
+            className="flex items-center justify-between p-3 my-3 border-b border-gray-700"
           >
+            <div>
             <input
               type="checkbox"
               className="w-6 h-6 mr-4"
               checked={item.done}
               onClick={() => handleDoneCheckbox(item.id)}
             />
-            <p className="flex-1 text-lg">{item.text}</p>
-            <button onClick={() => handleEdit(item.id)} className="mx-4 text-white hover:text-gray-500">Editar</button>
-            <button onClick={() => handleRemove(item.id)} className="mx-4 text-white hover:text-gray-500">Excluir</button>
+            <p className="flex-1 max-w-lg text-md break-words">{item.text}</p>
+            </div>
+
+            <div>
+              <button onClick={() => handleEdit(item.id)} className="mx-4 text-white hover:text-gray-500">Editar</button>
+              <button onClick={() => handleRemove(item.id)} className="mx-4 text-white hover:text-gray-500">Excluir</button>
+            </div>
+
           </li>
         ))}
       </ul>
