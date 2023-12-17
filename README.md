@@ -1,3 +1,9 @@
+
+![Captura de tela 2023-12-17 094159](https://github.com/EliaxZen/lista-de-tarefas-usando-reducer-react/assets/132005740/4423a650-3fbb-453b-bad6-d6a06de2a026)
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
